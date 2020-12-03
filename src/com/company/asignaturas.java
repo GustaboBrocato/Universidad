@@ -8,6 +8,7 @@ public class asignaturas {
     private String horario;
     private int capacidad;
     private String nombresAlumnos[];
+    private String nombresCatedraticos[];
 
     public static void main(String[] args){
         ArrayList<String> nombres = new ArrayList<String>(); //utilizar este metodo para revisar numeros de cedula en el proyecto, contains - si no existe -1
@@ -19,6 +20,13 @@ public class asignaturas {
         }
     }
 
+    public String[] getNombresCatedraticos() {
+        return nombresCatedraticos;
+    }
+
+    public void setNombresCatedraticos(String[] nombresCatedraticos) {
+        this.nombresCatedraticos = nombresCatedraticos;
+    }
 
     public String getCodigoAsignatura() {
         return codigoAsignatura;
